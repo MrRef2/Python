@@ -74,5 +74,22 @@ x y z w F
 ```
 Ответ:zyxw
 
+15124
+<img width="403" height="108" alt="image" src="https://github.com/user-attachments/assets/48361c36-bce4-40bf-adc6-4d80b9e78f46" />
+(x ≡ y ) ∨ ((y ∨ z) → x).
+```
+print ('x y z F')
+for x in range (0, 2):
+    for y in range (0, 2):
+        for z in range (0, 2):
+            F = (x==y)or((y or z) <= x)
+            if not F == 1:
+                print (x, y, z, F)
+```
+```
+x y z F
+0 1 0 False
+0 1 1 False
+```
 
-
+Ответ:xzy
