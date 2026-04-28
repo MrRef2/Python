@@ -54,23 +54,22 @@
 <img width="319" height="120" alt="image" src="https://github.com/user-attachments/assets/a00602e4-732d-4361-86d5-0f23b2843408" />
 ((x → y) ∨ (y ≡ w)) ∧ ((x ∨ z) ≡ w)
 ```
-print('x y z w F')
+print('x y z w')
 for x in range(0, 2):
     for y in range(0, 2):
         for z in range(0, 2):
             for w in range(0, 2):
-                F = (( x <= y ) or (y == w)) and ((x or z) == w)
-                if F == 1:
-                    print(x, y, z, w, F)
+                if (( x <= y ) or (y == w)) and ((x or z) == w):
+                    print(x, y, z, w)
 ```
 ```
-x y z w F
-0 0 0 0 True
-0 0 1 1 True
-0 1 0 0 True
-0 1 1 1 True
-1 1 0 1 True
-1 1 1 1 True
+x y z w
+0 0 0 0
+0 0 1 1
+0 1 0 0
+0 1 1 1
+1 1 0 1
+1 1 1 1
 ```
 Ответ:zyxw
 
@@ -78,18 +77,17 @@ x y z w F
 <img width="403" height="108" alt="image" src="https://github.com/user-attachments/assets/48361c36-bce4-40bf-adc6-4d80b9e78f46" />
 (x ≡ y ) ∨ ((y ∨ z) → x).
 ```
-print ('x y z F')
-for x in range (0, 2):
-    for y in range (0, 2):
-        for z in range (0, 2):
-            F = (x==y)or((y or z) <= x)
-            if not F == 1:
-                print (x, y, z, F)
+print("x y z")
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            if not((x == y) or ((y or z) <= x)):
+                print(x, y, z)
 ```
 ```
-x y z F
-0 1 0 False
-0 1 1 False
+x y z
+0 1 0
+0 1 1
 ```
 
 Ответ:xzy
@@ -97,3 +95,59 @@ x y z F
 26974
 
 (x ∨ y) ∧ ¬(y ≡ z) ∧ ¬w
+```
+print ('x y z w')
+for x in range(0,2):
+     for y in range(0,2):
+        for z in range(0,2):
+            for w in range(0,2):
+                if (x or y) and not(y==z) and not w:
+                    print (x, y, z, w)
+```
+```
+x y z w
+0 1 0 0
+1 0 1 0
+1 1 0 0
+```
+Ответ:xyzw
+
+15618
+
+(x ∧ ¬y) ∨ (y ≡ z) ∨ ¬w
+```
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x and not (y)) or (y==z) or not (w)):
+                    print(x,y,z,w)
+```
+```
+x y z w
+0 0 1 1
+0 1 0 1
+1 1 0 1
+```
+Ответ:wzyx
+
+15970
+
+(x ∧ ¬y) ∨ (y ≡ z ) ∨ w
+```
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x and not (y)) or (y==z) or w):
+                    print(x,y,z,w)
+```
+```
+x y z w
+0 0 1 0
+0 1 0 0
+1 1 0 0
+```
+Ответ:yxwz
