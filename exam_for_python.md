@@ -104,7 +104,6 @@ x y z
 
 
 <img width="304" height="135" alt="image" src="https://github.com/user-attachments/assets/8e5f6b8f-5632-4c91-b3c0-9f5a5a23d342" />
-<img width="291" height="86" alt="image" src="https://github.com/user-attachments/assets/df191838-3fb3-4381-a452-988c73ce93f8" />
 
 (x ∨ y) ∧ ¬(y ≡ z) ∧ ¬w
 ```
@@ -152,7 +151,6 @@ x y z w
 
 
 <img width="499" height="130" alt="image" src="https://github.com/user-attachments/assets/cadd0b5e-faa2-418e-be19-3010713f0168" />
-<img width="289" height="83" alt="image" src="https://github.com/user-attachments/assets/bb981b38-a2bd-4b32-bee4-5fd9ee76e227" />
 
 
 (x ∧ ¬y) ∨ (y ≡ z ) ∨ w
@@ -178,7 +176,6 @@ x y z w
 
 
 <img width="500" height="133" alt="image" src="https://github.com/user-attachments/assets/6ede2105-968e-4465-a804-9f30c19d9909" />
-<img width="290" height="83" alt="image" src="https://github.com/user-attachments/assets/e35c257e-31d2-4ff3-bea3-9a6a5d175157" />
 
 
 ((w → ¬x) ≡ (z → y)) ∧ (y ∨ w)
@@ -209,7 +206,6 @@ x y z w
 
 
 <img width="180" height="105" alt="image" src="https://github.com/user-attachments/assets/cee0a054-6f43-48f1-980f-f2a1ac643fa2" />
-<img width="288" height="79" alt="image" src="https://github.com/user-attachments/assets/b5e55b79-d073-401c-bbcf-7e872398fdfb" />
 
 F1  =  (x → y)≡(w ∨ ¬ z),
 F2  =  (x → y)∧(¬w≡z).
