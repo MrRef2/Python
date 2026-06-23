@@ -51,7 +51,11 @@
 в итоге мы получим: `(( x <= y ) or (y == w)) and ((x or z) == w)`
 ### Решения задач: (Тип 2)
 28677
+
+
 <img width="319" height="120" alt="image" src="https://github.com/user-attachments/assets/a00602e4-732d-4361-86d5-0f23b2843408" />
+
+
 ((x → y) ∨ (y ≡ w)) ∧ ((x ∨ z) ≡ w)
 ```
 print('x y z w')
@@ -74,7 +78,11 @@ x y z w
 Ответ:zyxw
 
 15124
+
+
 <img width="403" height="108" alt="image" src="https://github.com/user-attachments/assets/48361c36-bce4-40bf-adc6-4d80b9e78f46" />
+
+
 (x ≡ y ) ∨ ((y ∨ z) → x).
 ```
 print("x y z")
@@ -93,6 +101,8 @@ x y z
 Ответ:xzy
 
 26974
+
+
 <img width="304" height="135" alt="image" src="https://github.com/user-attachments/assets/8e5f6b8f-5632-4c91-b3c0-9f5a5a23d342" />
 <img width="291" height="86" alt="image" src="https://github.com/user-attachments/assets/df191838-3fb3-4381-a452-988c73ce93f8" />
 
@@ -115,7 +125,11 @@ x y z w
 Ответ:xyzw
 
 15618
+
+
 <img width="281" height="130" alt="image" src="https://github.com/user-attachments/assets/abf0919d-3ee0-4e7d-b077-5b3b9b9f0402" />
+
+
 (x ∧ ¬y) ∨ (y ≡ z) ∨ ¬w
 ```
 print('x y z w')
@@ -135,9 +149,12 @@ x y z w
 Ответ:wzyx
 
 15970
+
+
 <img width="499" height="130" alt="image" src="https://github.com/user-attachments/assets/cadd0b5e-faa2-418e-be19-3010713f0168" />
 <img width="289" height="83" alt="image" src="https://github.com/user-attachments/assets/bb981b38-a2bd-4b32-bee4-5fd9ee76e227" />
-неповторяющиеся
+
+
 (x ∧ ¬y) ∨ (y ≡ z ) ∨ w
 ```
 print('x y z w')
@@ -158,8 +175,12 @@ x y z w
 
 
 18614
+
+
 <img width="500" height="133" alt="image" src="https://github.com/user-attachments/assets/6ede2105-968e-4465-a804-9f30c19d9909" />
 <img width="290" height="83" alt="image" src="https://github.com/user-attachments/assets/e35c257e-31d2-4ff3-bea3-9a6a5d175157" />
+
+
 ((w → ¬x) ≡ (z → y)) ∧ (y ∨ w)
 
 ```
@@ -185,6 +206,8 @@ x y z w
 Ответ:xwyz
 
 55589
+
+
 <img width="180" height="105" alt="image" src="https://github.com/user-attachments/assets/cee0a054-6f43-48f1-980f-f2a1ac643fa2" />
 <img width="288" height="79" alt="image" src="https://github.com/user-attachments/assets/b5e55b79-d073-401c-bbcf-7e872398fdfb" />
 
