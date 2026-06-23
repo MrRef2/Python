@@ -239,6 +239,11 @@ x y z w   f1 f2
 1 1 1 0   0   1
 1 1 1 1   1   0
 ```
+ 
+48423
+<img width="500" height="133" alt="image" src="https://github.com/user-attachments/assets/8ca44a37-8c8e-4460-8558-985548389bd0" />
+(x → (y ≡ w)) ∧ (y ≡ (w → z))
+
 
 Ответ:xzyw
 
