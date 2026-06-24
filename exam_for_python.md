@@ -58,13 +58,13 @@
 
 ((x → y) ∨ (y ≡ w)) ∧ ((x ∨ z) ≡ w)
 ```
-print('x y z w')
-for x in range(0, 2):
-    for y in range(0, 2):
-        for z in range(0, 2):
-            for w in range(0, 2):
-                if (( x <= y ) or (y == w)) and ((x or z) == w):
-                    print(x, y, z, w)
+print ("x y z w")
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                if ((x <= y) or (y == w)) and ((x or z) == w)==1:
+                    print (x,y,z,w)
 ```
 ```
 x y z w
@@ -75,6 +75,12 @@ x y z w
 1 1 0 1
 1 1 1 1
 ```
+``
+x y z w
+0 0 1 1
+1 1 0 1
+0 1 0 0
+``
 Ответ:zyxw
 
 15124
@@ -181,24 +187,38 @@ x y z w
 ((w → ¬x) ≡ (z → y)) ∧ (y ∨ w)
 
 ```
-print("x y z w")
-for x in range(0, 2):
-    for y in range(0, 2):
-        for z in range(0, 2):
-            for w in range(0, 2):
-                if ((w <= (not x)) == (z <= y)) and (y or w):
-                    print(x, y, z, w)
+print ('x y z w F')
+for x in range (2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                F = ((w <= ((not x))) == (z <= y)) and (y or w)
+                print (x, y, z, w, int(F))
 ```
 ```
-x y z w
-0 0 0 1
-0 1 0 0
-0 1 0 1
-0 1 1 0
-0 1 1 1
-1 0 1 1
-1 1 0 0
-1 1 1 0
+x y z w F
+0 0 0 0 0
+0 0 0 1 1
+0 0 1 0 0
+0 0 1 1 0
+0 1 0 0 1
+0 1 0 1 1
+0 1 1 0 1
+0 1 1 1 1
+1 0 0 0 0
+1 0 0 1 0
+1 0 1 0 0
+1 0 1 1 1
+1 1 0 0 1
+1 1 0 1 0
+1 1 1 0 1
+1 1 1 1 0
+```
+```
+x y z w F
+1 1 0 1 0
+0 1 1 0 1
+0 0 0 1 1
 ```
 Ответ:xwyz
 
@@ -211,43 +231,116 @@ F1  =  (x → y)≡(w ∨ ¬ z),
 F2  =  (x → y)∧(¬w≡z).
 
 ```
-print("x y z w f1 f2")
+print ('x y z w F1 F2')
 for x in range(2):
     for y in range(2):
         for z in range(2):
             for w in range(2):
-                f1 = ((x <= y) == (w or not z))
-                f2 = ((x <= y) and (not w == z))
-                print(x, y, z, w, " ", int(f1), " ", int(f2))
+                F1 = (x <= y) == (w or (not(z)))
+                F2 = (x <= y) and (not(w == z))
+                print (x, y, z, w, int(F1), int(F2))
 ```
 ```
-x y z w   f1 f2
-0 0 0 0   1   0
-0 0 0 1   1   1
-0 0 1 0   0   1
-0 0 1 1   1   0
-0 1 0 0   1   0
-0 1 0 1   1   1
-0 1 1 0   0   1
-0 1 1 1   1   0
-1 0 0 0   0   0
-1 0 0 1   0   0
-1 0 1 0   1   0
-1 0 1 1   0   0
-1 1 0 0   1   0
-1 1 0 1   1   1
-1 1 1 0   0   1
-1 1 1 1   1   0
+x y z w F1 F2
+0 0 0 0 1 0
+0 0 0 1 1 1
+0 0 1 0 0 1
+0 0 1 1 1 0
+0 1 0 0 1 0
+0 1 0 1 1 1
+0 1 1 0 0 1
+0 1 1 1 1 0
+1 0 0 0 0 0
+1 0 0 1 0 0
+1 0 1 0 1 0
+1 0 1 1 0 0
+1 1 0 0 1 0
+1 1 0 1 1 1
+1 1 1 0 0 1
+1 1 1 1 1 0
 ```
- 
+
+```
+x y z w F1 F2
+0 0 1 1 1  0
+1 0 0 0 0  0
+0 0 1 0 0  1
+```
+Ответ:xzyw
+ 
 48423
+
 <img width="500" height="133" alt="image" src="https://github.com/user-attachments/assets/8ca44a37-8c8e-4460-8558-985548389bd0" />
+
 (x → (y ≡ w)) ∧ (y ≡ (w → z))
 
-
+```
+print("x y z w")
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                F = ((x <= (y == w)) and (y == (w <= z)))
+                print (x, y, z, w, int(F))
+```
 Ответ:xzyw
 
+15787
 
+((x → y ) ∧ (y → w)) ∨ (z ≡ ( x ∨ y))
+
+```
+print ('x y z w')
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                if ((x <= y) and (y <= w)) or (z == (x or y))==0:
+                    print (x, y, z, w)
+```
+```
+x y z w
+0 0 0 0
+0 0 0 1
+0 0 1 0
+0 0 1 1
+0 1 0 0
+0 1 0 1
+0 1 1 1
+1 0 0 0
+1 0 0 1
+1 1 0 0
+1 1 0 1
+1 1 1 1
+```
+```
+x y z w
+1 1 0 0
+0 1 0 0
+1 1 0 1
+```
+Ответ:ywzx
+
+85678
+
+
+
+
+
+```
+x y z w
+0 0 0 0
+0 0 0 1
+0 0 1 0
+0 1 0 0
+0 1 1 0
+1 0 0 0
+1 0 0 1
+1 0 1 0
+1 0 1 1
+1 1 0 0
+1 1 1 0
+```
 ### Решения задач: (Тип 8)
 
 3697
